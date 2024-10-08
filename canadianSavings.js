@@ -543,7 +543,7 @@ function updateChart(ageGroup) {
 function createLineChart(){
 
         // Set up dimensions and margins
-        const margin = {top: 40, right: 40*window.innerWidth/1000, bottom: 50, left: 80*window.innerWidth/1000};
+        const margin = {top: 40, right: Math.min(50,70*window.innerWidth/1000), bottom: 50, left: Math.min(80,130*window.innerWidth/1000)};
         const width = Math.min(1000,window.innerWidth*0.95) - margin.left - margin.right;
         const height = Math.min(1000,window.innerHeight*0.8) - margin.top - margin.bottom;
 
