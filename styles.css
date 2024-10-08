@@ -114,7 +114,7 @@ select {
 
 .lineChartAxis text {
   fill: rgb(0, 0, 0);
-  font-size: 1em;
+  font-size: 0.95em;
 }
 
 .zeroLine {
@@ -137,7 +137,7 @@ select {
 }
 
 .lineChartLegend {
-  font-size:0.9em;
+  font-size:0.8em;
   font-weight: bold;
 }
 

@@ -543,9 +543,9 @@ function updateChart(ageGroup) {
 function createLineChart(){
 
         // Set up dimensions and margins
-        const margin = {top: 40, right: 50, bottom: 50, left: 80};
+        const margin = {top: 40, right: 40*window.innerWidth/1000, bottom: 50, left: 80*window.innerWidth/1000};
         const width = Math.min(1000,window.innerWidth*0.95) - margin.left - margin.right;
-        const height = 600 - margin.top - margin.bottom;
+        const height = Math.min(1000,window.innerHeight*0.8) - margin.top - margin.bottom;
 
         // Create SVG
         const svg = d3.select("#lineChart")
@@ -677,7 +677,7 @@ function createLineChart(){
         const legendItems = legend.selectAll("g")
             .data(lineData)
             .enter().append("g")
-            .attr("transform", (d, i) => `translate(${i * Math.min(width/4,125) -margin.left + 20}, 0)`);
+            .attr("transform", (d, i) => `translate(${i * Math.min(width/5,125) -margin.left + 10}, 0)`);
 
         legendItems.append("rect")
             .attr("x", 0)
