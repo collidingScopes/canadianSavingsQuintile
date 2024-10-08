@@ -133,21 +133,25 @@ const y4 = d3.scaleLinear()
 const xAxis = svg.append("g")
     .attr("transform", `translate(0,${height})`)
     .attr("class","axis")
+    .attr("class","quantileLabel")
 const yAxis = svg.append("g").attr("class","axis")
 
 const xAxis2 = svg2.append("g")
     .attr("transform", `translate(0,${height})`)
     .attr("class","axis")
+    .attr("class","quantileLabel")
 const yAxis2 = svg2.append("g").attr("class","axis")
 
 const xAxis3 = svg3.append("g")
     .attr("transform", `translate(0,${height})`)
     .attr("class","axis")
+    .attr("class","quantileLabel")
 const yAxis3 = svg3.append("g").attr("class","axis")
 
 const xAxis4 = svg4.append("g")
     .attr("transform", `translate(0,${height})`)
     .attr("class","axis")
+    .attr("class","quantileLabel")
 const yAxis4 = svg4.append("g").attr("class","axis")
 
 //Add y=0 lines
@@ -247,10 +251,7 @@ function updateChart(ageGroup) {
     x3.domain(chartData3.map(d => d.quintile));
     y3.domain([Math.min(-50000,d3.min(chartData3, d => d.value)), Math.max(60000,d3.max(chartData3, d => d.value))]);
     x4.domain(chartData4.map(d => d.quintile));
-    y4.domain([Math.min(-1,d3.min(chartData4, d => d.value)), Math.max(0.5,d3.max(chartData4, d => d.value))]);
-
-    // y.tickFormat(d3.format("$,.0f"));
-    // yAxis4.tickFormat(d3.format(".0%"));
+    y4.domain([Math.min(-1.1,d3.min(chartData4, d => d.value)), Math.max(0.5,d3.max(chartData4, d => d.value))]);
 
     // Update axes
     xAxis.call(d3.axisBottom(x));

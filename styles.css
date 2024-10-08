@@ -52,7 +52,6 @@ body {
   box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px;
 }
 
-
 select {
   margin-top: 1vh;
   margin-bottom: 1vh;
@@ -102,6 +101,11 @@ select {
 .axis text {
   fill: rgb(123, 123, 123);
   font-size: 0.9em;
+}
+
+.quantileLabel {
+  font-weight: bold;
+  font-size: 0.9em !important;
 }
 
 .lineChartAxis line {

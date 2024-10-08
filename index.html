@@ -9,6 +9,25 @@
 </head>
 <body>
 
+  <p class="firstPara">This post analyses Canadian income / spending / cash flow, splitting the broad average into a quintile distribution and a breakdown by age group. The goal is to showcase the gap between the financial situation of Canadians at the lower vs. higher ends of the spectrum.</p>
+  <p>Using this data, we can answer questions such as:</p>
+  <ul>
+    <li>What is the after-tax income of the richest and poorest Canadian households?</li>
+    <li>How much do Canadians save per year? How does this vary for high vs. low income-earners?</li>
+    <li>Has the inequality gap between poor / rich Canadians increased or decreased over time?</li>
+  </ul>
+
+  <p>The data is sourced from <a href="https://doi.org/10.25318/3610058701-eng" target="_blank" rel="noopener">Statistics Canada</a>.</p>
+
+  <p>Note: throughout this analysis you'll see mention of income "quintiles". This means that Canadian households have been ranked from low-to-high based on their income, and then divided into 5 buckets of households. "Quintile 1" refers to the bottom 20% of households, while "Quintile 5" refers to the top 20% of households.</p>
+  <p>Put another way, quintile 1 = 0-20th percentile, quintile 2 = 21-40th percentile, quintile 3 = 41-60th percentile, etc...</p>
+  &nbsp;
+
+  <h2>Canadian Household Income / Spending / Cash Flow by Quintile (2023)</h2>
+  <p>As of 2023, the average Canadian household earns $96,406 per year (after-tax income) and spends $93,707 per year, equating to +$2,699 of cash flow each year.</p>
+  <p>Put another way, the average Canadian household saves ~3% of their post-tax income per year.</p>
+  <p>However, as we'll see below, the "average" story hides many key dynamics which we can uncover by breaking down the data into quintiles (lower income vs. higher income buckets) and age groups.</p>
+  <p>The tool below lets you explore one age group at a time (use the drop-down menu to change), and shows how Canadian income / spending / cash flow differs based on quantile group.</p>
   <div id="chart-container">
       <div id="chartHeaderTitle">
         <span>Canadian Household Income / Spending / Cash Flow by Quintile (2023)</span>
@@ -33,7 +52,20 @@
       <div id="chart4"></div>
   </div>
 
-  <h2>Canadian Household Cash Flow Over Time, By Quintile (1999 to 2023)</h2>
+  <p>Canadians at the high vs. low end of the distribution have vastly different financial positions:</p>
+  <ul>
+    <li>The top 20% of households (quintile 5, all age groups) are earning $197,667 per year in after-tax income, and positive cash flow of $60,652 per year</li>
+    <li>The bottom 20% of households (quintile 1, all age groups) are earning $31,604 per year in after-tax income, and <b>negative</b> cash flow of $30,364 per year</li>
+    <li>~60% of Canadian households had negative cash flow in 2023 (i.e., a reduction in their savings balance)</li>
+  </ul>
+
+  <p>The top-end of the income distribution is managing to save a large chunk of cash each year, while a large share of households are struggling to keep up with the high cost of housing and food in Canada.</p>
+  <p>While the Statistics Canada dataset doesn't contain further details, we can speculate that lower income households may be sustaining their lifestyles by taking on debt (line of credit, credit card, student loans), receiving financial support from family, and by drawing down on their savings balance.</p>
+  &nbsp;
+
+  <h2>Canadian Household Cash Flow By Quintile (1999 to 2023)</h2>
+  <p>The chart below shows household cash flow by quintile, over the period of 1999 to 2023 (for all age groups combined).</p>
+  <p>The data has been adjusted for the impact of inflation, with all values showing 2023 dollars.</p>
   <div id="line-chart-container">
     <div id="chartHeaderTitle">
       <span>Canadian Household Cash Flow By Quintile (1999 to 2023)</span>
@@ -52,6 +84,40 @@
 
     <div id="lineChart"></div>
   </div>
+
+  <p>This metric shows that economic inequality has increased over time, with the gap between high/low income-earners widening over time.</p>
+  <ul>
+    <li>In 2023, the top 20% of Canadian households (quintile 5) had cash flow of $60,652, compared to negative cash flow of $30,364 for the bottom 20% (quintile 1). This implies a cash flow gap of <b>$91,106</b> between the richest and poorest Canadians</li>
+    <li>In 1999, the cash flow gap was <b>$45,398</b></li>
+    <li>Over 25 years, the gap in savings power between rich and poor Canadians has doubled</li>
+  </ul>
+  &nbsp;
+
+  <h2>Sources, Notes, and Closing Remarks</h2>
+  <p>The data was sourced from Statistics Canada:<p>
+    <ul>
+      <li><a href="https://doi.org/10.25318/3610058701-eng" target="_blank" rel="noopener">Distributions of household economic accounts, income, consumption and saving, by characteristic, annual</a></li>
+      <li><a href="https://doi.org/10.25318/1810000501-eng" target="_blank" rel="noopener">Consumer Price Index, annual average, not seasonally adjusted</a></li>
+    </ul>
+  <p>A few key notes and precisions about the Statistics Canada dataset</p>
+  <ul>
+    <li>The income values reported by Statistics Canada is net of taxes paid, includes government benefits received, and also includes investment income / interest received offset by interest paid</li>
+    <li>The spending values reported by Statistics Canada includes the concept of "gross imputed rent" in the definition of housing costs, which means that an estimated market rent expense is included for households that own their homes</li>
+    <li>The "cash flow" shown in this post is defined as after-tax income minus spending, and does not include changes in pension entitlements. The pension value has been excluded as Statistics Canada does not report this value for age group quintiles</li>
+  </ul>
+
+  <p>Statistics Canada provides detailed explanations of their data methodologies <a href="https://www150.statcan.gc.ca/n1/pub/13-607-x/2016001/940-eng.htm" rel="noopener" target="_blank">here</a>.</p>
+
+  <p>These charts were created using the d3.js data visualization library.</p>
+  <p>If you liked this post, you may be interested in some of my other tools and data essays:</p>
+  <ul>
+    <li><a href="https://themeasureofaplan.com/tools/" rel="noopener" target="_blank">Free spreadsheets and tools for budgeting, investment portfolio tracking, and more</a></li>
+    <li><a href="https://themeasureofaplan.com/wealth-map/" rel="noopener" target="_blank">The Wealth of Nations: income, cost of living, and purchasing power for 110 countries</a></li>
+    <li><a href="https://themeasureofaplan.com/investment-returns-by-asset-class/" rel="noopener" target="_blank">Investment returns by asset class (1985 to 2024)</a></li>
+    <li><a href="https://themeasureofaplan.com/us-stock-market-returns-1870s-to-present/" rel="noopener" target="_blank">US stock market returns -- a history from the 1870s to 2023</a></li>
+  </ul>
+
+  <p>That's all for now! Thanks for joining me on this data deep dive 🧐. Feel free to drop any comments or questions below.</p>
 
 </body>
 <script src="canadianSavings.js"></script>
