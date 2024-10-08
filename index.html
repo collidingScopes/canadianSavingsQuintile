@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income by Quintile Chart</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div id="chart-container">
+      <div id="chartHeaderTitle">
+        <span>Canadian Household Income / Spending / Cash Flow by Quintile (2023)</span>
+        <br>
+      </div>
+
+      <div id="chartHeaderSubtitle">
+        <span>Data source: Statistics Canada</span>
+        <br>
+        <span>Chart created by: The Measure of a Plan</span>
+        <br>
+        <span>Note: quintile 1 = bottom 20% of incomes, while quintile 5 = top 20% of incomes</span>
+      </div>
+
+      <div id="selectDiv">
+        <label for="age-group-select" class="selectLabel">Age Group:</label><select id="age-group-select"></select>
+      </div>
+      
+      <div id="chart"></div>
+      <div id="chart2"></div>
+      <div id="chart3"></div>
+      <div id="chart4"></div>
+  </div>
+
+  <h2>Canadian Household Cash Flow Over Time, By Quintile (1999 to 2023)</h2>
+  <div id="line-chart-container">
+    <div id="chartHeaderTitle">
+      <span>Canadian Household Cash Flow By Quintile (1999 to 2023)</span>
+      <br>
+    </div>
+
+    <div id="chartHeaderSubtitle">
+      <span>Data source: Statistics Canada; inflation-adjusted 2023 dollars; cash flow defined as household after-tax income minus household spending</span>
+      <br>
+      <span>Chart created by: The Measure of a Plan</span>
+      <br>
+      <span>Note: quintile 1 = bottom 20% of incomes, while quintile 5 = top 20% of incomes</span>
+    </div>
+
+    <div id="lineChartLegendDiv"></div>
+
+    <div id="lineChart"></div>
+  </div>
+
+</body>
+<script src="canadianSavings.js"></script>
+</html>

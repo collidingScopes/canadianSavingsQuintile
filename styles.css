@@ -1,0 +1,156 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+#chart-container {
+  margin: 0 auto;
+  text-align: center;
+  /* border: 2px solid gray; */
+  background-color: #fff8f4;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  max-width: 800px;
+}
+
+#line-chart-container {
+  margin: 0 auto;
+  text-align: center;
+  /* border: 2px solid gray; */
+  background-color: #fff8f4;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  max-width: 1000px;
+}
+
+#chartHeaderTitle {
+  font-size: 1.6em;
+  font-weight: bold;
+  background-color: #042f41;
+  color: #effbff;
+  margin-bottom: 0.5vh;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#chartHeaderSubtitle {
+  font-size: 0.7em;
+  font-style: italic;
+  text-align: left;
+  padding-left: 10px;
+  color: rgb(79, 79, 79);
+}
+
+#selectDiv {
+  border-top: 2px solid #7b7b7b;
+  border-bottom: 2px solid #7b7b7b;
+  background-color: rgb(233, 233, 233);
+  max-width: 350px;
+  margin: auto;
+  margin-top: 0.5vh;
+  margin-bottom: 0.5vh;
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px;
+}
+
+
+select {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  margin-left: 2vw;
+  font-size: 1.2em;
+  font-weight: bold;
+  border: 3px solid #280538;
+  padding: 5px;
+  border-radius: 6px;
+  background-color: #fff4fe;
+  color: #280538;
+  cursor: pointer;
+}
+
+.selectLabel {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.chartTitle{
+  font-size: 1.4em;
+  font-weight: bold;
+  fill: #042f41;
+}
+
+.chartSubtitle{
+  font-size: 0.7em;
+  font-weight: normal;
+  fill: rgb(24, 23, 48);
+}
+
+.bar-label {
+  font-size: 1em;
+  fill: #042f41;
+  font-weight: bold;
+  text-anchor: middle;
+}
+
+.axis line {
+  stroke: rgb(169, 169, 169);
+}
+
+.axis path{
+  stroke: rgb(169, 169, 169);
+}
+
+.axis text {
+  fill: rgb(123, 123, 123);
+  font-size: 0.9em;
+}
+
+.lineChartAxis line {
+  stroke: rgb(169, 169, 169);
+}
+
+.lineChartAxis path{
+  stroke: rgb(169, 169, 169);
+}
+
+.lineChartAxis text {
+  fill: rgb(0, 0, 0);
+  font-size: 1em;
+}
+
+.zeroLine {
+  stroke: black;
+  stroke-width: 2px;
+}
+
+.tooltip {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+  pointer-events: none;
+}
+
+#lineChart{
+
+}
+
+.lineChartLegend {
+  font-size:0.9em;
+  font-weight: bold;
+}
+
+.grid line {
+  stroke: lightgrey;
+  stroke-opacity: 0.7;
+  shape-rendering: crispEdges;
+}
+.grid path {
+  stroke-width: 0;
+}
+
+.label-0, .label-4 {
+  font-size: 0.9em;
+  font-weight: bold;
+}
