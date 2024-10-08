@@ -154,3 +154,9 @@ select {
   font-size: 0.9em;
   font-weight: bold;
 }
+
+@media screen and (max-width: 600px) {
+  #chart-container, #line-chart-container {
+    font-size: 12px;
+  }
+}
