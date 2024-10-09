@@ -7,7 +7,7 @@ body {
   margin: 0 auto;
   text-align: center;
   /* border: 2px solid gray; */
-  background-color: #fff8f4;
+  background-color: rgb(255, 248, 244);
   font-family: Helvetica, Arial, sans-serif;
   font-size: 16px;
   max-width: 800px;
@@ -26,7 +26,7 @@ body {
 #chartHeaderTitle {
   font-size: 1.6em;
   font-weight: bold;
-  background-color: #042f41;
+  background-color: rgb(4, 47, 65);
   color: #effbff;
   margin-bottom: 0.5vh;
   padding-top: 10px;
@@ -157,6 +157,19 @@ select {
 .label-0, .label-4 {
   font-size: 0.9em;
   font-weight: bold;
+}
+
+.footnote {
+  font-style: italic;
+  font-size: 0.95em;
+}
+
+.firstPara {
+  margin-top: 2vh;
+}
+
+.image {
+  width: min(95vw, 800px);
 }
 
 @media screen and (max-width: 600px) {

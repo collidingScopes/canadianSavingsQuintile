@@ -1,10 +1,3 @@
-/*
-To do:
-CSS media queries for smaller font sizes on mobile
-Audit data / check sources
-Write article, add links
-*/
-
 const barColor = "#0cc9e1";
 const barColor2 = "#6c07b3";
 const barColor3 = "#ff6c11";
